@@ -149,7 +149,6 @@ ul {
     border-color: white;
     border: 3px;
     border-radius: 20px;
-    padding: 5px;
     text-decoration: none;
 }
 
@@ -164,16 +163,22 @@ ul {
 
 
 /*Game cards*/
+
 .grid-wrap img {
     width: 100%;
     height: auto;
+}
+
+.game-card img {
     max-width: 150px;
-    min-width: 50px;
+    min-width: 70px;
+    padding: 5px;
 }
 
 .grid-wrap {
     display: flex;
     justify-content: space-evenly;
+    justify-items: center;
 }
 
 .game-card {
@@ -207,6 +212,11 @@ footer a {
 }
 
 @media (max-width: 800px) {
+    body {
+        margin: 20px;
+    }
+
+    /* Navigation */
     .header-bottom-bar nav {
         display: none;
     }
@@ -218,6 +228,21 @@ footer a {
     #hamburger:checked ~ nav {
         display: block;
     }
+
+    /*Ad-Images*/
+    #retro-gaming-image {
+        margin-left: 3px;
+    }
+
+    /* Game Cards*/
+    .game-list {
+        margin-top: 20px;
+    }
+    .game-card {
+        margin-top: 5px;
+    }
+
+    /*End*/
 
     footer {
         display: none;
