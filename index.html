@@ -1,10 +1,135 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My first website</title>
-  </head>
-  <body>
-    <h1>Hello world!</h1>
-    <p>Welcome to my first website.</p>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Online shop for videogames. Buy new or used game for any gaming device.">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Montserrat&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eadebda42a.js" crossorigin="anonymous"></script>
+    <title>Gamehub - Home</title>
+</head>
+<body>
+    <header>
+        <section class="header-top-bar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/GameHub_Logo.png" alt="Gamehub logo" class="logo-image">
+                </a>
+            </div>
+            <div class="search-bar">
+                <form id="search-form">
+                    <input type="search" id="search" placeholder="Search...">
+                    <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+            <div class="icons-right">
+                <a href="#"><i class="fa-solid fa-user"></i></a>
+                <a href="#"><i class="fa-solid fa-heart"></i></a>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </section>
+        <section class="header-bottom-bar">
+            <div class="hamburger-menu">
+                <input type="checkbox" name="hamburger" value="checked" id="hamburger">
+                <label for="hamburger">hamburger</label>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="listofproduct.html">New Releases</a></li></li>
+                    <li><a href="listofproduct.html">Playbox</a></li>
+                    <li><a href="listofproduct.html">Playstation</a></li>
+                    <li><a href="listofproduct.html">Nintendo</a></li>
+                    <li><a href="listofproduct.html">PC Gaming</a></li>
+                    <li><a href="listofproduct.html">Sell Your Games</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section class="ad-images">
+            <div class="racing-ad">
+                <img src="images/racing.jpg" alt="Cropped picture of the game Racing" id="racing-image">
+                <div class="cta">
+                    <a href="product.html" class="cta" >GET IT NOW!</a>
+                </div>
+            </div>
+            <div class="retro-gaming">
+                <img src="images/retro-gaming.jpg" alt="Picture of a retro game" id="retro-gaming-image">
+                <div class="text-retro-gaming">
+                    <h3>Retro Gaming</h3>
+                </div>
+            </div>
+        </section>
+        <section class="game-list">
+            <div class="game-list-title">
+                <hr><h1>Popular Games</h1><hr>
+            </div>
+            <div class="grid-wrap">
+                <div class="game-card">
+                    <a href="product.html">
+                        <img src="images/GameHub_covers10.jpg" alt="Game cover" class="video-game-product">
+                    </a>
+                    <div class="text-game-card">
+                        <h3>Forged Legend</h3>
+                        <h5>New:</h5><p>$ 49.90</p>
+                        <h5>Used from:</h5><p>$25.50</p>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <a href="product.html">
+                        <img src="images/GameHub_covers2.jpg" alt="Game cover" class="video-game-product">
+                    </a>
+                    <div class="text-game-card">
+                        <h3>Super Duper</h3>
+                        <h5>New:</h5><p>$ 49.90</p>
+                        <h5>Used from:</h5><p>$25.50</p>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <a href="product.html">
+                        <img src="images/GameHub_covers3.jpg" alt="Game cover" class="video-game-product">
+                    </a>
+                    <div class="text-game-card">
+                        <h3>Black</h3>
+                        <h5>New:</h5><p>$ 49.90</p>
+                        <h5>Used from:</h5><p>$25.50</p>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <a href="product.html">
+                        <img src="images/GameHub_covers4.jpg" alt="Game cover" class="video-game-product">
+                    </a>
+                    <div class="text-game-card">
+                        <h3>Furious</h3>
+                        <h5>New:</h5><p>$ 49.90</p>
+                        <h5>Used from:</h5><p>$25.50</p>
+                    </div>
+                </div>
+            </div>
+            <div class="game-list-title">
+                <hr><h1>New Releases</h1><hr>
+            </div>
+            <div class="grid-wrap">
+                <a href="product.html">
+                    <img src="images/GameHub_covers10.jpg" alt="Game cover" class="video-game-product">
+                </a>
+                <a href="product.html">
+                    <img src="images/GameHub_covers2.jpg" alt="Game cover" class="video-game-product">
+                </a>
+                <a href="product.html">
+                    <img src="images/GameHub_covers3.jpg" alt="Game cover" class="video-game-product">
+                </a>
+                <a href="product.html">
+                    <img src="images/GameHub_covers4.jpg" alt="Game cover" class="video-game-product">
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="about.html">About Gamehub</a>
+        <a href="contact.html">Contact Us</a>
+    </footer>
+</body>
 </html>

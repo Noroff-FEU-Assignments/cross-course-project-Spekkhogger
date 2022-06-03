@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: white;
+    color: #707070;
+    margin: 200px;
+    margin-top: 30px;
+}
+
+.header-top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo-image {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    min-width: 100px;
+    cursor: pointer;
+}
+
+.search-bar {
+    border-color: #1B203D;
+    font-family: "Montserrat", sans-serif;
+}
+
+#search-form {
+    width: 500px;
+    height: 44px;
+    border-radius: 10px;
+}
+
+#search-button {
+    width: 44px;
+    height: 44px;
+    background-color: #1B203D;
+    color: white;
+    cursor: pointer;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+}
+
+.icons-right {
+    display: flex;
+    color: #1B203D;
+    flex-direction: row;
+}
+
+.icons-right a {
+    color: #1B203D;
+    text-decoration: none;
+    margin-right: 0;
+    margin-left: 100px;
+}
+
+.icons-right a:hover {
+    color: #632A7E;
+}
+
+/* Navigation */
+
+.header-bottom-bar nav {
+    box-sizing: content-box;
+    width: 100%;
+    background-color: #2BB170;
+    padding: 5px;
+    border: solid #2BB170 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1B203D;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.header-bottom-bar nav a:hover{
+    background-color: #60C494;
+    padding: 5px;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+/* Ad images */
+
+.ad-images {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: -30px;
+}
+
+.ad-images img {
+    border-radius: 20px;
+    width: 100%;
+    height: 80%;
+}
+
+.retro-gaming {
+    font-family: "Roboto Mono", sans-serif;
+    position: relative;
+    display: inline-block;
+}
+
+.retro-gaming .text-retro-gaming {
+    position: absolute;
+    color: #FFF5A0;
+    z-index: 999;
+    left: 0;
+    right: 30%;
+    top: 60%;
+    text-align: center;
+    height: 100%;
+}
+
+.racing-ad {
+    position: relative;
+    display: inline-block;
+}
+
+.cta {
+    background-color: #FD100F;
+    color: white; 
+    border-color: white;
+    border: 3px;
+    border-radius: 20px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.racing-ad .cta {
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    right: 30%;
+    top: 60%;
+    text-align: center;
+}
+
+
+/*Game cards*/
+.grid-wrap img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    min-width: 50px;
+}
+
+.grid-wrap {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.game-card {
+    display: flex;
+    flex-direction: column;
+    padding-top: -10px;
+    padding-bottom: 0px;
+    margin-top: 10px;
+}
+
+.text-game-card h5 {
+    display: flex;
+}
+
+.game-list-title h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 100px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #707070;
+}
+
+@media (max-width: 800px) {
+    .header-bottom-bar nav {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    #hamburger:checked ~ nav {
+        display: block;
+    }
+
+
+
+
+
+    footer {
+        display: none;
+    }
+}
