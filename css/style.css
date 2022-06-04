@@ -81,7 +81,6 @@ input {
     padding: 5px;
     border: solid #2BB170 10px;
     display: flex;
-    justify-content: space-between;
 }
 
 nav a {
@@ -92,7 +91,10 @@ nav a {
 ul {
     list-style-type: none;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
 
 .header-bottom-bar nav a:hover{
     background-color: #60C494;
@@ -193,6 +195,10 @@ ul {
     display: flex;
 }
 
+.game-list-title {
+    margin-top: 20px;
+}
+
 .game-list-title h1{
     display: flex;
     justify-content: center;
@@ -211,6 +217,23 @@ footer a {
     color: #707070;
 }
 
+/*Filler content for unbuilt pages*/
+.work-in-progress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-in-progress img {
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+    min-width: 300px;
+}
+
+/* Media - Smaller screens*/
+
 @media (max-width: 800px) {
     body {
         margin: 20px;
@@ -223,6 +246,14 @@ footer a {
 
     .hamburger-menu {
         display: flex;
+    }
+
+    #hamburger {
+        color: #1B203D;
+    }
+
+    #hamburger:hover {
+        color: #632A7E;
     }
 
     #hamburger:checked ~ nav {
@@ -240,6 +271,19 @@ footer a {
     }
     .game-card {
         margin-top: 5px;
+    }
+
+    .grid-wrap {
+        margin-top: 10px;
+        overflow-x: scroll;
+    }
+
+    /*Filler content for unbuilt pages*/
+    .work-in-progress img {
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+        min-width: 300px;
     }
 
     /*End*/
