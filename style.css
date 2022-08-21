@@ -673,15 +673,16 @@ footer ul {
     .product-page-info .green-button {
         position: fixed;
         height: 40px;
-        bottom: 5;
+        bottom: 150px;
         right: 0;
     }
     
     .others-look-at {
-        margin: 10px 0px 50px;
+        margin: 10px 0px 200px;
         border: none;
         border-top: 1px solid var(--lightgray);
         padding: 1em;
+        height: 100%;
     }
 
 
@@ -720,6 +721,7 @@ footer ul {
         flex-direction: column;
         border: none;
         padding: 1%;
+        margin: 0 0 10;
     }
     
     .checkout-field input {
