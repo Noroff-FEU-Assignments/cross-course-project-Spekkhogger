@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The Universes of games - buy and sell, old and new games.">
+    <meta name="description" content="Game hub. Welcome to your shopping cart. Here you can see all the items you've added to your cart.">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/eadebda42a.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <title>Gamehub</title>
+    <title>Gamehub - Shopping cart</title>
 </head>
 <body>
     <header>
@@ -47,32 +47,43 @@
             </div>
     </header>
     <main>
-        <section id="contact-us-wrap">
-            <div id="contact-image">
-                <img src="img/3745105.jpg" alt="filler illustration of people and a video game consoles">
-            </div>
-            <div class="contact-form-wrap">
-                <h1>Contact Us</h1>
-                <div class="contact-form">
-                    <form action="datalist">
-                        <label for="contact">What can we help you with?</label>
-                        <input list="contact-reason" id="contact" name="category" placeholder="Choose a category"/>
-                        <datalist id="contact-reason">
-                            <option value="Return"></option>
-                            <option value="Feedback"></option>
-                            <option value="Shipping"></option>
-                            <option value="Other"></option>
-                        </datalist>
-                        <input type="text" name="Your Name" id="nameinput" placeholder="Name">
-                        <input type="text" name="E-mail address" placeholder="E-mail address">
-                        <textarea name="Message" id="message" cols="50" rows="10" placeholder="Write your message here"></textarea>
-                        
-                    </form>
-                    <button class="green-button">Send</button>
+            <div class="cart-wrap">
+                <div class="cart-header-wrap">
+                    <h1>Your shopping cart</h1>
+                    <div class="QTR">
+                        <p>Quantity</p>
+                        <p>Total</p>
+                        <p>Remove</p>
+                    </div>
+                </div>
+                <div class="cart-item-wrap">
+                    <img src="img/game-img/GameHub_covers10.jpg" alt="Item in cart visual" id="cart-item-image" class="video-game-product">
+                    <div class="cart-item-info">
+                        <h2>Forge Legend</h2>
+                        <h5>Playbox</h5>
+                        <p>This would be the description of the game. This is where the description of this amazingly fun fantasy game goes.</p>
+                    </div>
+                    <div class="cart-item-quantity">
+                        <p>1</p>
+                    </div>
+                    <div class="cart-item-price">
+                        <p>$49.90</p>
+                    </div>
+                    <div class="remove-cart-item">
+                        <a href="#"><i class="fa-solid fa-x"></i></a>
+                    </div>
+                </div>
+                <div class="cart-shipping">
+                    <p>Shipping cost:</p>
+                    <p>$ 0.00</p>
+                </div>
+                <div class="cart-total">
+                    <p>Your total:</p>
+                    <p>$ 49.90</p>
                 </div>
             </div>
-        </section>
-    </main>
+            <a href="checkout.html"><button class="green-button" id="go-to-checkout">Go to Checkout</button></a>
+        </main>
     <footer>
         <div class="footer-nav">
             <ul>

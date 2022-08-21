@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The Universes of games - buy and sell, old and new games.">
+    <meta name="description" content="Fill in billinginformation to complete your purchase, and enjoy all your new games">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/eadebda42a.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -47,31 +47,47 @@
             </div>
     </header>
     <main>
-        <section id="contact-us-wrap">
-            <div id="contact-image">
-                <img src="img/3745105.jpg" alt="filler illustration of people and a video game consoles">
+        <h1>Checkout</h1>
+        <div class="checkout-field">
+            <div class="checkout-field-left">
+                <p>Your order</p>
             </div>
-            <div class="contact-form-wrap">
-                <h1>Contact Us</h1>
-                <div class="contact-form">
-                    <form action="datalist">
-                        <label for="contact">What can we help you with?</label>
-                        <input list="contact-reason" id="contact" name="category" placeholder="Choose a category"/>
-                        <datalist id="contact-reason">
-                            <option value="Return"></option>
-                            <option value="Feedback"></option>
-                            <option value="Shipping"></option>
-                            <option value="Other"></option>
-                        </datalist>
-                        <input type="text" name="Your Name" id="nameinput" placeholder="Name">
-                        <input type="text" name="E-mail address" placeholder="E-mail address">
-                        <textarea name="Message" id="message" cols="50" rows="10" placeholder="Write your message here"></textarea>
-                        
-                    </form>
-                    <button class="green-button">Send</button>
+            <div class="checkout-field-right">
+                <p>Billing information</p>
+                <div class="input-field">
+                    <label for="firstname">First name</label>
+                        <input type="text" placeholder="First name">
+                </div>
+                <div class="input-field">
+                    <label for="lastname">Last name</label>
+                        <input type="text" placeholder="Last name">
+                </div>
+                <div class="input-field">
+                    <label for="address">Address</label>
+                        <input type="text" placeholder="Address">
+                </div>
+                <div class="input-field">
+                        <input type="text">
+                </div>
+                <div class="input-field">
+                    <label for="zipcode">Zip code</label>
+                        <input type="text" placeholder="Zip code">
+                </div>
+                <div class="input-field">
+                    <label for="country">Country</label>
+                        <input type="text" placeholder="Country">
+                </div>
+                <div class="input-field">
+                    <label for="phone"> Phone </label>
+                        <input type="number" placeholder="+47 ">
+                </div>
+                <div class="input-field">
+                    <label for="email"> E-mail address </label>
+                        <input type="email" placeholder="Your E-mail"> 
                 </div>
             </div>
-        </section>
+        </div>
+        <a href="checkoutsuccess.html"><button class="green-button" id="complete-purchase">Complete purchase</button></a>
     </main>
     <footer>
         <div class="footer-nav">

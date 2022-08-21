@@ -4,54 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Online shop for videogames. Buy new or used game for any gaming device.">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Montserrat&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <meta name="description" content="The Universes of games - buy and sell, old and new games.">
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/eadebda42a.js" crossorigin="anonymous"></script>
-    <title>Gamehub - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Gamehub</title>
 </head>
 <body>
     <header>
-        <section class="header-top-bar">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/GameHub_Logo.png" alt="Gamehub logo" class="logo-image">
-                </a>
+        <div class="top-nav">
+            <a href="index.html"><img src="img/GameHub_Logo.png" alt="Gamehub Logo" id="logo-img"></a>
+            <div class="search-bar">
+                <input type="text" class="search-bar-input" placeholder="Search" aria-label="input field for search">
+                <button class="search-button"><a href="listpage.html"><i class="fa-solid fa-magnifying-glass"></a></i></button>
             </div>
-                <form id="search-bar">
-                    <input type="search" id="search" placeholder="Search...">
-                    <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </form>
-            <div class="icons-right">
-                <a href="#" class="icon"><i class="fa-solid fa-user"></i></a>
-                <a href="#" class="icon"><i class="fa-solid fa-heart"></i></a>
-                <a href="#" class="icon"><i class="fa-solid fa-cart-shopping"></i></a>
+            <div class="icons-top">
+                <button><a href="login.html"><i class="fa-solid fa-user"></i></a></button>
+                <button><a href="cart.html"><i class="fa-solid fa-heart"></i></i></a></button>
+                <button><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></i></a></button>
             </div>
-        </section>
-        <section class="header-bottom-bar">
             <div class="hamburger-menu">
-                <input type="checkbox" name="hamburger" value="checked" id="hamburger">
-                <label for="hamburger"><i class="fa-solid fa-bars"></i></label>
+                <a href="#nav-mobile"><i class="fa-solid fa-bars"></i></a>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="listofproduct.html">New Releases</a></li></li>
-                    <li><a href="listofproduct.html">Playbox</a></li>
-                    <li><a href="listofproduct.html">Playstation</a></li>
-                    <li><a href="listofproduct.html">Nintendo</a></li>
-                    <li><a href="listofproduct.html">PC Gaming</a></li>
-                    <li><a href="listofproduct.html">Sell Your Games</a></li>
-                </ul>
-            </nav>
-        </section>
+        </div>
+            <div id="nav-mobile">
+                <nav>
+                    <a href="#"><button class="nav-hidden" id="close-hamburger">X</button></a>
+                    <ul>
+                        <li><a href="listpage.html">New Releases</a></li>
+                        <li><a href="listpage.html">Playbox</a></li>
+                        <li><a href="listpage.html">Playstation</a></li>
+                        <li><a href="listpage.html">Nintendo</a></li>
+                        <li><a href="listpage.html">PC</a></li>
+                        <li><a href="listpage.html">Sell Your Games</a></li>
+                        <li class="nav-hidden"><a href="cart.html">Your Favorites</a></li>
+                        <li class="nav-hidden"><a href="cart.html">Shopping Cart</a></li>
+                        <li class="nav-hidden"><a href="login.html">Sign In</a></li>
+                        <li class="nav-hidden"><a href="about.html">About</a></li>
+                        <li class="nav-hidden"><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
     </header>
     <main>
-        <div class="work-in-progress">
-            <img src="images/3745105.jpg" alt="filler illustration of people and video games consoles">
-            <h3>This page is under construction...</h3>
-        </div>
+        <section class="about-section">
+            <div>
+                <img src="img/GameHub_Logo.png" alt="gamehub logo" class="logo-image-about">
+            </div>
+            <h1>About Gamehub</h1>
+            <div class="about">
+                <p>
+                    GameHub is an online shop where users can purchase computer games. This gaming marketplace lets you buy tons of video games online for any device.
+                </p>
+                <p>
+                    GameHub is a competitively priced website with a huge range of games. For a user buying games: It is an online game store that provides digital games to gamers at a competitive price.
+                </p>
+                <p>
+                    GameHub allows you to purchase new and old games from all the popular consoles as well as PC games.  
+                </p>
+            </div>
+        </section>
     </main>
     <footer>
-        <a href="about.html">About Gamehub</a>
-        <a href="contact.html">Contact Us</a>
+        <div class="footer-nav">
+            <ul>
+                <li><a href="about.html">About Gamehub</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
     </footer>
+    </body>
