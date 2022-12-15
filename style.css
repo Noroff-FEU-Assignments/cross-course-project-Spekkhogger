@@ -403,12 +403,13 @@ nav ul li:hover {
     max-width: 600px;
 }
 
-.contact-form input, #message {
+#message {
+    width: 430px;
     border-radius: 10px;
-    width: 400px;
     min-width: none;
     margin-top: 5px;
     font-family: 'Montserrat', sans-serif;
+    border: 1px solid black;
 }
 
 #contact-form {
@@ -423,6 +424,10 @@ nav ul li:hover {
 .form-error {
     display: none;
     color: red;
+}
+
+form button {
+    max-width: 430px;
 }
 
 /*Log in*/

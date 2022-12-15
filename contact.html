@@ -58,10 +58,10 @@
                         <label for="contact">What can we help you with?</label>
                         <input list="contact-reason" id="contact" name="category" placeholder="Choose a category"/>
                         <datalist id="contact-reason">
-                            <option value="Return"></option>
-                            <option value="Feedback"></option>
-                            <option value="Shipping"></option>
-                            <option value="Other"></option>
+                            <option value="Return" class="option-value"></option>
+                            <option value="Feedback" class="option-value"></option>
+                            <option value="Shipping" class="option-value"></option>
+                            <option value="Other" class="option-value"></option>
                         </datalist>
                         <label>Name (Required)
                             <input type="text" name="Your Name" id="nameinput" placeholder="Name">
@@ -71,7 +71,7 @@
                             <input type="text" name="E-mail address" id="emailinput" placeholder="E-mail address">
                         </label>
                         <div class="form-error" id="email-form-error">Please enter valid e-mail</div>
-                        <label>Your message
+                        <label>
                             <textarea name="Message" id="message" cols="50" rows="10" placeholder="Write your message here"></textarea>
                         </label>
                         <button class="green-button">Send</button>
