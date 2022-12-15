@@ -53,41 +53,44 @@
                 <p>Your order</p>
             </div>
             <div class="checkout-field-right">
-                <p>Billing information</p>
-                <div class="input-field">
-                    <label for="firstname">First name</label>
-                        <input type="text" placeholder="First name">
-                </div>
-                <div class="input-field">
-                    <label for="lastname">Last name</label>
-                        <input type="text" placeholder="Last name">
-                </div>
-                <div class="input-field">
-                    <label for="address">Address</label>
-                        <input type="text" placeholder="Address">
-                </div>
-                <div class="input-field">
-                        <input type="text">
-                </div>
-                <div class="input-field">
-                    <label for="zipcode">Zip code</label>
-                        <input type="text" placeholder="Zip code">
-                </div>
-                <div class="input-field">
-                    <label for="country">Country</label>
-                        <input type="text" placeholder="Country">
-                </div>
-                <div class="input-field">
-                    <label for="phone"> Phone </label>
-                        <input type="number" placeholder="+47 ">
-                </div>
-                <div class="input-field">
-                    <label for="email"> E-mail address </label>
-                        <input type="email" placeholder="Your E-mail"> 
-                </div>
+                <form action="" id="checkout-form">
+                    <p>Billing information</p>
+                    <div class="input-field">
+                        <label for="firstname">First name</label>
+                            <input type="text" placeholder="First name" id="firstname">
+                    </div>
+                    <div class="input-field">
+                        <label for="lastname">Last name</label>
+                            <input type="text" placeholder="Last name" id="lastname">
+                    </div>
+                    <div class="input-field">
+                        <label for="address">Address</label>
+                            <input type="text" placeholder="Address" id="address-field">
+                    </div>
+                    <div class="input-field">
+                            <input type="text">
+                    </div>
+                    <div class="input-field">
+                        <label for="zipcode">Zip code</label>
+                            <input type="text" placeholder="Zip code" id="zipcode">
+                    </div>
+                    <div class="input-field">
+                        <label for="country">Country</label>
+                            <input type="text" placeholder="Country" id="country">
+                    </div>
+                    <div class="input-field">
+                        <label for="phone"> Phone </label>
+                            <input type="number" placeholder="+47 " id="checkout-phone">
+                    </div>
+                    <div class="input-field">
+                        <label for="email"> E-mail address </label>
+                            <input type="email" placeholder="Your E-mail" id="checkout-email"> 
+                    </div>
+                    <a href="checkoutsuccess.html"><button class="green-button" id="complete-purchase">Complete purchase</button></a>
+                </form>
             </div>
         </div>
-        <a href="checkoutsuccess.html"><button class="green-button" id="complete-purchase">Complete purchase</button></a>
+        
     </main>
     <footer>
         <div class="footer-nav">
@@ -108,4 +111,5 @@
             a.appendChild(r);
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
+    <script src="scripts/checkoutscript.js"></script>
     </body>
