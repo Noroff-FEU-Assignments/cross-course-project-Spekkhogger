@@ -8,15 +8,10 @@ const emailError = document.querySelector("#email-form-error");
 const nameError = document.querySelector("#name-form-error");
 
 
-
 function formValidation(event) {
     event.preventDefault();
 
-    if (formName.value.trim().length > 2) {
-        formName.style.backgroundColor = "green"; 
-    } else {
-        nameError.style.display = "block"; 
-    }
+    checkError(formName, nameError, 2);
 
     if (validateEmail(formEmail.value)) {
         formEmail.style.backgroundColor = "ligthgreen";
@@ -24,12 +19,6 @@ function formValidation(event) {
         formEmail.style.backgroundColor = "ligthcoral";
         emailError.style.display = "block";
     }
-}
-
-function validateEmail(emailToValidate) {
-    const regEx = /\S+@\S+\.\S+/; 
-    const matchPattern = regEx.test(emailToValidate); 
-    return matchPattern;
 }
 
 contactForm.addEventListener("submit", formValidation);
