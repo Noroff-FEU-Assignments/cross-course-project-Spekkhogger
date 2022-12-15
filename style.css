@@ -411,6 +411,15 @@ nav ul li:hover {
     font-family: 'Montserrat', sans-serif;
 }
 
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form label {
+    margin-top: 15px;
+}
+
 /*Log in*/
 .log-in-form {
     display: flex;

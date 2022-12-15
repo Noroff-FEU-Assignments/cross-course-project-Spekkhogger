@@ -53,8 +53,8 @@
             </div>
             <div class="contact-form-wrap">
                 <h1>Contact Us</h1>
-                <div class="contact-form">
-                    <form action="datalist">
+                <div class="contact-form-wrap">
+                    <form action="" id="contact-form">
                         <label for="contact">What can we help you with?</label>
                         <input list="contact-reason" id="contact" name="category" placeholder="Choose a category"/>
                         <datalist id="contact-reason">
@@ -63,12 +63,17 @@
                             <option value="Shipping"></option>
                             <option value="Other"></option>
                         </datalist>
-                        <input type="text" name="Your Name" id="nameinput" placeholder="Name">
-                        <input type="text" name="E-mail address" placeholder="E-mail address">
-                        <textarea name="Message" id="message" cols="50" rows="10" placeholder="Write your message here"></textarea>
-                        
+                        <label>Name (Required)
+                            <input type="text" name="Your Name" id="nameinput" placeholder="Name">
+                        </label>
+                        <label> E-mail (Required)
+                            <input type="text" name="E-mail address" id="emailinput" placeholder="E-mail address">
+                        </label>
+                        <label>Your message
+                            <textarea name="Message" id="message" cols="50" rows="10" placeholder="Write your message here"></textarea>
+                        </label>
+                        <button class="green-button">Send</button>
                     </form>
-                    <button class="green-button">Send</button>
                 </div>
             </div>
         </section>
@@ -92,4 +97,5 @@
             a.appendChild(r);
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
+    <script src="scripts/contactscript.js"></script>
     </body>
