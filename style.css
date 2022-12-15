@@ -420,6 +420,11 @@ nav ul li:hover {
     margin-top: 15px;
 }
 
+.form-error {
+    display: none;
+    color: red;
+}
+
 /*Log in*/
 .log-in-form {
     display: flex;
