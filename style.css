@@ -114,12 +114,28 @@ nav ul li:hover {
     font-weight: 700;
 }
 
+.breadcrumbs ul {
+    display: flex;
+}
+.breadcrumbs ul li a:hover {
+    text-decoration: underline;
+}
+.breadcrumbs ul li a{
+    color: var(--lightgray);
+    margin-right: 10px;
+}
+.breadcrumbs {
+    margin-left: -50px;
+    margin-top: -20px;
+}
+
 /*Footer*/
     .footer-nav ul {
         display: flex;
         justify-content: center;
         align-items: flex-end;
     }
+
 
 /*Homepage content*/
 /* Ad images */
