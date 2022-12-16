@@ -14,9 +14,9 @@ function formValidation(event) {
     checkError(formName, nameError, 2);
 
     if (validateEmail(formEmail.value)) {
-        formEmail.style.backgroundColor = "ligthgreen";
+        formEmail.style.border = "2px solid green"
     } else {
-        formEmail.style.backgroundColor = "ligthcoral";
+        formEmail.style.border = "2px solid red"
         emailError.style.display = "block";
     }
 }

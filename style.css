@@ -738,9 +738,9 @@ footer ul {
 
     /*Cart page mobile*/
     .cart-wrap {
-        border: 0;
-        margin: 0;
-        padding: 0;
+        border: 1px solid var(--lightgray);
+        margin: 10px;
+        padding: 20px;
     }
     
     .cart-wrap > div {
@@ -750,20 +750,26 @@ footer ul {
         margin-bottom: 0;
     }
     
-    .cart-header-wrap {
-        align-items: center;
-        flex-direction: column;
-    }
-    
-    .QTR {
-        display: none;
-    }
-    
     .cart-item-wrap {
         margin: 10px;
         padding: 0;
         align-items: start;
         flex-direction: column;
+    }
+
+    .cart-item-wrap div {
+        margin-top: 20px;
+        margin-right: -20px;
+    }
+
+    #remove-item {
+        position: absolute;
+        top: 220px;
+        left: 400px;
+    }
+
+    #go-to-checkout {
+        margin-right: 50px;
     }
 
     /*Checkout process*/

@@ -28,8 +28,10 @@ function billingValidation (event){
 
     if (validateEmail(emailInput.value)) {
         emailError.style.display = "none";
+        emailInput.style.border = "2px solid green"
     } else {
         emailError.style.display = "block";
+        emailInput.style.border = "2px solid red"
     }
     
 }
