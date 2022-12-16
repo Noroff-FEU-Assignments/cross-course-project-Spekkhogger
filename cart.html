@@ -47,15 +47,20 @@
             </div>
     </header>
     <main>
+        <h1>Your shopping cart</h1>
+        <div id="empty-cart">Your shopping cart is Empty
+            <a href="listpage.html">Click here to browse our games.</a>
+        </div>
             <div class="cart-wrap">
                 <div class="cart-header-wrap">
-                    <h1>Your shopping cart</h1>
+                    
                     <div class="QTR">
                         <p>Quantity</p>
                         <p>Total</p>
                         <p>Remove</p>
                     </div>
                 </div>
+                
                 <div class="cart-item-wrap">
                     <img src="img/game-img/GameHub_covers10.jpg" alt="Item in cart visual" id="cart-item-image" class="video-game-product">
                     <div class="cart-item-info">
@@ -70,7 +75,7 @@
                         <p>$49.90</p>
                     </div>
                     <div class="remove-cart-item">
-                        <a href="#"><i class="fa-solid fa-x"></i></a>
+                        <a href="#"><i class="fa-solid fa-x" id="remove-item"></i></a>
                     </div>
                 </div>
                 <div class="cart-shipping">
@@ -79,7 +84,7 @@
                 </div>
                 <div class="cart-total">
                     <p>Your total:</p>
-                    <p>$ 49.90</p>
+                    <p id="cost">$ 49.90</p>
                 </div>
             </div>
             <a href="checkout.html"><button class="green-button" id="go-to-checkout">Go to Checkout</button></a>
@@ -103,4 +108,5 @@
             a.appendChild(r);
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
+    <script src="scripts/cartscript.js"></script>
     </body>

@@ -497,6 +497,17 @@ form button {
     float: right;
 }
 
+#empty-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 24pt;
+    color: var(--textcolor); 
+    padding: 100px;
+    display: none;    
+}
+
 /*Checkout process*/
 .checkout-field {
     display: flex;
