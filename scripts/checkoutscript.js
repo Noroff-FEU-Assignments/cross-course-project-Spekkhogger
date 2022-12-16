@@ -16,6 +16,8 @@ const addressError = document.querySelector("#address-checkout-error");
 const lastnameError = document.querySelector("#lastname-checkout-error");
 const firstnameError = document.querySelector("#firstname-checkout-error");
 
+var counter = 0;
+
 function billingValidation (event){
     event.preventDefault(); 
 
@@ -29,11 +31,17 @@ function billingValidation (event){
     if (validateEmail(emailInput.value)) {
         emailError.style.display = "none";
         emailInput.style.border = "2px solid green"
+        counter += 1; 
     } else {
         emailError.style.display = "block";
-        emailInput.style.border = "2px solid red"
     }
     
+}
+
+console.log(counter);
+
+if (counter === 7){
+    firstnameInput.style.display = "none"
 }
 
 checkoutForm.addEventListener("submit", billingValidation);
