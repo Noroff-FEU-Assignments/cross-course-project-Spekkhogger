@@ -646,6 +646,10 @@ footer ul {
         display: inline-block;
     }
 
+    .breadcrumbs {
+        display: none;
+    }
+
     /*Main content front page*/
     .ad-images {
         flex-direction: column;
