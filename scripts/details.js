@@ -1,4 +1,3 @@
-const gameDetails = document.querySelector(".product-wrap");
 const title = document.querySelector("title"); 
 const addButton = document.querySelector("#added-button");
 const infoBox = document.querySelector(".product-page-info");
