@@ -446,6 +446,14 @@ form button {
     max-width: 430px;
 }
 
+.message-sent-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
 /*Log in*/
 .log-in-form {
     display: flex;

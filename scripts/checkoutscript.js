@@ -35,6 +35,7 @@ function billingValidation (event){
         counter += 1;
     } else {
         emailError.style.display = "block";
+        emailInput.style.border = "2px solid red";
     }
 
     console.log(counter); 
