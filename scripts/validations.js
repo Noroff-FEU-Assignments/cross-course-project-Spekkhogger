@@ -12,10 +12,11 @@ function validateLength(input, reqLen){
 function checkError(input, error, length){
     if (validateLength(input.value, length)){
         error.style.display = "none";
-        input.style.border = "2px solid green"
+        input.style.border = "2px solid green";
         counter += 1; 
     } else {
         error.style.display = "block";
-        input.style.border = "2px solid red"
+        input.style.border = "2px solid red";
+        counter = 0; 
     }
 }

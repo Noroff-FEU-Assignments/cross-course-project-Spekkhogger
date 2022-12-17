@@ -646,7 +646,7 @@ footer ul {
         display: inline-block;
     }
 
-    .breadcrumbs {
+    .breadcrumbs ul {
         display: none;
     }
 

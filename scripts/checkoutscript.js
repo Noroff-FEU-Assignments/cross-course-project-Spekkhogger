@@ -16,34 +16,32 @@ const addressError = document.querySelector("#address-checkout-error");
 const lastnameError = document.querySelector("#lastname-checkout-error");
 const firstnameError = document.querySelector("#firstname-checkout-error");
 
-var counter = 0;
+var counter = 0; 
+
 
 function billingValidation (event){
     event.preventDefault(); 
 
-    checkError(firstnameInput, firstnameError, 2);
-    checkError(lastnameInput, lastnameError, 2);
-    checkError(addressInput, addressError, 3);
-    checkError(zipCodeInput, zipCodeError, 3);
-    checkError(countryInput, countryError, 2);
-    checkError(phoneNumberInput, phoneError, 8);
+    checkError(firstnameInput, firstnameError, 1);
+    checkError(lastnameInput, lastnameError, 1);
+    checkError(addressInput, addressError, 2);
+    checkError(zipCodeInput, zipCodeError, 2);
+    checkError(countryInput, countryError, 1);
+    checkError(phoneNumberInput, phoneError, 7);
 
     if (validateEmail(emailInput.value)) {
         emailError.style.display = "none";
-        emailInput.style.border = "2px solid green"
-        counter += 1; 
+        emailInput.style.border = "2px solid green";
+        counter += 1;
     } else {
         emailError.style.display = "block";
     }
-    
-}
 
-console.log(counter);
+    console.log(counter); 
 
-if (counter === 7){
-    firstnameInput.style.display = "none"
+    if (counter >= 7) {
+        window.location.href = "checkoutsuccess.html"; 
+    }
 }
 
 checkoutForm.addEventListener("submit", billingValidation);
-
-
