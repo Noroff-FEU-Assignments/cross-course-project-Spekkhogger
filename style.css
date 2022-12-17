@@ -1,6 +1,6 @@
 :root {
     --main: #2BB170;
-    --textcolor: #707070;
+    --textcolor: #535353;
     --lightgray: #C9C9C9;
     --darkblue: #11182E;
     --red: #FD100F;
@@ -159,7 +159,8 @@ nav ul li:hover {
 
 .retro-gaming .text-retro-gaming {
     position: absolute;
-    color: #FFF5A0;
+    color: var(--darkblue);
+    background-color: antiquewhite;
     z-index: 999;
     left: 0;
     right: 0%;
