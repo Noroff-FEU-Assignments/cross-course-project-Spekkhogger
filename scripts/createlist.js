@@ -9,7 +9,7 @@ getGames().forEach(game => {
             <h5>Playbox</h5>
             <div class="list-game-price">
                 <h3>$ ${game.price}</h3>
-                <a href="productpage.html" class="green-button">View game</a>
+                <a href="productpage.html?game=${game.pathVariable}" class="green-button">View game</a>
             </div>
         </div>
     </div>`
