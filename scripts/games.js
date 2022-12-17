@@ -11,7 +11,7 @@ class Game {
     }
 }
 
-function getGame(){
+function getGames(){
     return [
         new Game ("Forge Legend", "img", "Fantasy", 49.50, 3.9, "forge-legend"),
         new Game ("Cyberpunk", "img", "Action", 39.00, 2.9, "cyberpunk"),
@@ -28,9 +28,9 @@ function getGame(){
 
 console.log(Game); 
 
-Game.forEach(i => {
-    listOfGames.innerHTML = `
+getGames().forEach(game => {
+    listOfGames.innerHTML += `
     <div class="game-in-list">
-    ${Game[i].gameName}
+    ${game.gameName}
     </div>`
 });
