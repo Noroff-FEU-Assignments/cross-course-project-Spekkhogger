@@ -1,7 +1,7 @@
 :root {
     --main: #2BB170;
     --textcolor: #535353;
-    --lightgray: #C9C9C9;
+    --lightgray: #5d5d5d;
     --darkblue: #11182E;
     --red: #FD100F;
     --white: #fff;
@@ -130,11 +130,32 @@ nav ul li:hover {
     margin-top: -20px;
 }
 
+#empty-cart {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+#empty-cart h3 {
+    padding-bottom: 30px;
+}
+#empty-cart a {
+    font-weight: 300;
+    font-size: 20pt;
+}
+#empty-cart a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 /*Footer*/
     .footer-nav ul {
         display: flex;
         justify-content: center;
         align-items: flex-end;
+    }
+
+    .footer-nav ul li a:hover {
+        text-decoration: underline;
     }
 
 
