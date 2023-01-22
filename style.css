@@ -300,7 +300,6 @@ nav ul li:hover {
 
 .list-game-wrap .green-button{
     padding: 2px 18px;
-    margin-top: 100px;
 }
 
 .green-button:hover{
@@ -337,7 +336,6 @@ nav ul li:hover {
 .main-image img {
     max-width: 20rem;
     min-width: none;
-    margin-left: 25px;
 }
 
 .product-images-c {
@@ -364,6 +362,16 @@ nav ul li:hover {
     margin-top: 10px;
     border: 1px solid var(--lightgray);
     padding: 1em;
+}
+
+#added-notice {
+    position: absolute;
+    top: 600px;
+    left: 40%;
+    min-height: 100px;
+    min-width: 100px;
+    padding: 10px;
+    border: solid 2px var(--main);
 }
 
 /*About Page*/

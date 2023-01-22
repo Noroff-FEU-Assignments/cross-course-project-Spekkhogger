@@ -1,8 +1,6 @@
-const listOfGames = document.querySelector(".game-details")
-const url = "https://sanna.codes/wp-json/wc/store/products"
+const listOfGames = document.querySelector(".game-details");
+const url = "https://sanna.codes/wp-json/wc/store/products";
 
-let newRelease = [];
-let popular = [];
 
 const getGames = async() => {
     try {
@@ -31,10 +29,8 @@ const getGames = async() => {
                     <div class="list-game-info">
                         <h2>${gameName}</h2>
                         <h5>Playbox</h5>
-                        <div class="list-game-price">
-                            <h3>${gamePrice}NOK</h3>
-                            <a href="productpage.html?game=${gameID}" class="green-button">View game</a>
-                        </div>
+                        <h3>${gamePrice}NOK</h3>
+                        <a href="productpage.html?game=${gameID}" class="green-button">View game</a>
                     </div>
                 </div>
                 `;

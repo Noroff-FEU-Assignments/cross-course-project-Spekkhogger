@@ -30,7 +30,7 @@ const createGame = async() => {
         <h1>${gameName}</h1>
         <div class="product-page-info">
             <div class="main-image">
-                <img src="${gameImage}" alt="${imageAlt}">
+                <img src="${gameImage}" alt="${imageAlt}" class="main-image">
             </div>
             <div class="product-page-info">
                 <h2>${gamePrice}NOK</h2>
@@ -54,10 +54,11 @@ const createGame = async() => {
 createGame();
 
 function addToCart(){
-    infoBox.innerHTML = `
+    infoBox.innerHTML += ` <div id="added-notice"
     <p>Added to your cart!</p>
     
     <a href="cart.html" class="green-button">Click here to go to cart</a>
+    </div>
     `
 }
 
