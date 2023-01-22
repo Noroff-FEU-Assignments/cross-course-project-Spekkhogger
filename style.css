@@ -228,14 +228,14 @@ nav ul li:hover {
     width: 100%;
 }
 
-.grid-wrap {
+.grid-wrap-popular, .grid-wrap-featured {
     display: flex;
     justify-content: space-evenly;
     justify-items: center;
     overflow: hidden;
 }
 
-.grid-wrap .green-button {
+.grid-wrap-popular .green-button, .grid-wrap-featured .green-button {
     border-radius: 5px;
     max-height: 40px;
     margin-top: 5px;

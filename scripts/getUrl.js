@@ -1,4 +1,5 @@
 const listOfGames = document.querySelector(".game-details");
+
 const url = "https://sanna.codes/wp-json/wc/store/products";
 
 
@@ -8,6 +9,8 @@ const getGames = async() => {
         const data = await response.json();
 
         console.log(data);
+
+        listOfGames.innerHTML = ``;
 
         for (let i = 0; i < data.length; i++){
                 const gameID = data[i]["id"];

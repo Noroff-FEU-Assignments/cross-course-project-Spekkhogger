@@ -1,6 +1,7 @@
 const title = document.querySelector("title"); 
 const infoBox = document.querySelector(".product-container");
 const gameCrumb = document.querySelector("#gameCrumb");
+const featuredGames = document.querySelector(".grid-wrap-featured");
 
 
 const queryString = document.location.search;
@@ -39,6 +40,8 @@ const createGame = async() => {
             </div>
         </div>
         `;
+
+        
         gameCrumb.innerHTML = `<a href="#">${gameName}</a>`;
         title.innerHTML = `${gameName}`;
         const addButton = document.querySelector("#added-button");
