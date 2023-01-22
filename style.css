@@ -360,49 +360,10 @@ nav ul li:hover {
     width: 100%;
 }
 
-.extra-buttons {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.extra-buttons button {
-    background: var(--lightgray);
-    width: 100%;
-    margin: 5px 1px;
-    padding: 0 1em;
-    font-size: 15pt;
-    border: 3px solid var(--lightgray);
-}
-
-.extra-buttons button:hover {
-    background: var(--textcolor);
-    color: var(--white);
-    border: 3px solid var(--lightgray);
-}
-
 .others-look-at {
     margin-top: 10px;
     border: 1px solid var(--lightgray);
     padding: 1em;
-}
-
-.added-box-c {
-    opacity: 0;
-    visibility: hidden;
-}
-
-#added-box:target {
-    position: absolute;
-    top: 10%;
-    right: 5%;
-    background: var(--white);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 100px;
-    opacity: 1;
-    visibility: visible;
 }
 
 /*About Page*/
