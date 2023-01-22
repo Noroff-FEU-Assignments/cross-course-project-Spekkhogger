@@ -1,5 +1,5 @@
 const listOfGames = document.querySelector(".game-details")
-const url = "http://localhost:8888/wp-json/wc/store/products"
+const url = "https://sanna.codes/wp-json/wc/store/products"
 
 let newRelease = [];
 let popular = [];
@@ -14,7 +14,7 @@ const getGames = async() => {
         for (let i = 0; i < data.length; i++){
                 const gameID = data[i]["id"];
                 const gameName = data[i]["name"];
-                const gameImage = data[i]["images"][0]["scr"];
+                const gameImage = data[i]["images"][0]["src"];
                 const imageAlt = data[i]["images"]["alt"];
                 const gameDescription = data[i]["short_description"];
                 const gameGenre = data[i]["type"];
@@ -22,7 +22,6 @@ const getGames = async() => {
                 const gameRating = data[i]["average_rating"];
                 const pathVariable = gameName.replaceAll(' ', '-').toLowerCase();
                 const tagData = data[i]["tags"][0]["name"];
-                console.log(tagData);
 
                 listOfGames.innerHTML += `
                 <div class="list-game-wrap">
@@ -44,6 +43,7 @@ const getGames = async() => {
 
     catch (error){
         console.log("Couldn't fetch" + error);
+        listOfGames.innerHTML += `<h2> Oops, something went wrong. Please try again later`;
         
     }
 }

@@ -6,7 +6,7 @@ const gameCrumb = document.querySelector("#gameCrumb");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const gameNamePath = params.get("game");
-const detailsURL = "http://localhost:8888/wp-json/wc/store/products/" + gameNamePath
+const detailsURL = "https://sanna.codes/wp-json/wc/store/products/" + gameNamePath
 
 
 const createGame = async() => {
@@ -17,7 +17,7 @@ const createGame = async() => {
 
         const gameID = data["id"];
         const gameName = data["name"];
-        const gameImage = data["images"]["scr"];
+        const gameImage = data["images"][0]["src"];
         const imageAlt = data["images"]["alt"];
         const gameDescription = data["short_description"];
         const gameGenre = data["type"];
@@ -46,7 +46,8 @@ const createGame = async() => {
     }
 
     catch (error) {
-        console.log(error);
+        console.log("Couldn't fetch" + error);
+        infoBox.innerHTML += `<h2> Oops, something went wrong. Please try again later`;
     }
 }
 
