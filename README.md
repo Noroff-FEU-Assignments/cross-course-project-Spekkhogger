@@ -13,9 +13,11 @@ GameHub is a website and consists of several pages; most importantly:
 - About
 - Contact 
 
-The products and all information is fetched from a wordpress API hosted by one.com. 
+The products and all information is fetched from a wordpress API hosted on one.com. 
 
-The GameHub page and URL is hosted by Netlify. 
+The GameHub page and URL is hosted on Netlify. 
+
+[Link to page](https://ephemeral-sundae-92c10d.netlify.app/)
 
 ### Built with
 - HTML
@@ -24,11 +26,15 @@ The GameHub page and URL is hosted by Netlify.
 
 ## Getting started 
 ### Installing 
-1. Clone the repo: ()
-
+1. Clone the repo: 
+```
+https://github.com/Noroff-FEU-Assignments/cross-course-project-Spekkhogger.git
+```
 ### Running 
+Open with live server, or open in browser [Link to page](https://ephemeral-sundae-92c10d.netlify.app/)
 
-## Contributing 
+## Acknowledgements
+Icons from fontawesome.com
 
 ## Contact 
 Feel free to contact me: 
